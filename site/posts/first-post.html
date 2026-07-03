@@ -3,73 +3,73 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>浣跨敤 GitHub Pages 鎼缓涓汉鍗氬 - 涓汉鍗氬</title>
+    <title>使用 GitHub Pages 搭建个人博客 - 个人博客</title>
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
     <header class="site-header">
         <div class="container">
-            <h1><a href="../">馃専 鎴戠殑涓汉鍗氬</a></h1>
-            <p class="site-desc">鍒嗕韩鎶€鏈績寰椾笌寮€婧愮粡楠?/p>
+            <h1><a href="../">🌟 我的个人博客</a></h1>
+            <p class="site-desc">分享技术心得与开源经验</p>
         </div>
     </header>
     <main class="container">
         <article class="single-post">
             <header class="post-header">
-                <h1>浣跨敤 GitHub Pages 鎼缓涓汉鍗氬</h1>
-                <div class="post-meta"><time>2026-07-03</time> 路 浣滆€? Student</div>
+                <h1>使用 GitHub Pages 搭建个人博客</h1>
+                <div class="post-meta"><time>2026-07-03</time> · 作者: Student</div>
             </header>
             <div class="post-content">
-                <h2>鍓嶈█</h2>
-                <p>鍦ㄥ綋浠婁簰鑱旂綉鏃朵唬锛屾嫢鏈変竴涓釜浜哄崥瀹㈡槸鍒嗕韩鐭ヨ瘑銆佽褰曟垚闀跨殑閲嶈鏂瑰紡銆侴itHub Pages 鏄?GitHub 鎻愪緵鐨勫厤璐归潤鎬佺綉绔欐墭绠℃湇鍔★紝閰嶅悎 GitHub Actions 鍙互瀹炵幇浠ｇ爜鎺ㄩ€佸悗鑷姩閮ㄧ讲锛岄潪甯搁€傚悎鎶€鏈汉鍛樻惌寤轰釜浜哄崥瀹€?/p>
+                <h2>前言</h2>
+                <p>在当今互联网时代，拥有一个个人博客是分享知识、记录成长的重要方式。GitHub Pages 是 GitHub 提供的免费静态网站托管服务，配合 GitHub Actions 可以实现代码推送后自动部署，非常适合技术人员搭建个人博客。</p>
 
-                <h2>浠€涔堟槸 GitHub Pages锛?/h2>
-                <p>GitHub Pages 鏄竴涓潤鎬佺綉绔欐墭绠℃湇鍔★紝瀹冪洿鎺ヤ粠 GitHub 浠撳簱涓幏鍙?HTML銆丆SS 鍜?JavaScript 鏂囦欢锛屽彲浠ラ€夋嫨閫氳繃鐗瑰畾鍒嗘敮鎴栬€?GitHub Actions 宸ヤ綔娴佹潵鍙戝竷缃戠珯銆傛瘡涓?GitHub 璐︽埛鍙互鑾峰緱涓€涓敤鎴风珯鐐癸紙<code>username.github.io</code>锛夊拰鏃犻檺鏁伴噺鐨勯」鐩珯鐐癸紙<code>username.github.io/repo-name</code>锛夈€?/p>
+                <h2>什么是 GitHub Pages？</h2>
+                <p>GitHub Pages 是一个静态网站托管服务，它直接从 GitHub 仓库中获取 HTML、CSS 和 JavaScript 文件，可以选择通过特定分支或者 GitHub Actions 工作流来发布网站。每个 GitHub 账户可以获得一个用户站点（<code>username.github.io</code>）和无限数量的项目站点（<code>username.github.io/repo-name</code>）。</p>
 
-                <h2>鏍稿績姝ラ</h2>
-                <h3>1. 鍒涘缓浠撳簱</h3>
-                <p>棣栧厛鍦?GitHub 涓婂垱寤轰竴涓?strong>鍏紑</strong>浠撳簱銆備粨搴撳悕绉板彲浠ヤ换鎰忓懡鍚嶏紙濡?<code>my-blog</code>锛夛紝杩欐牱缃戠珯鍦板潃灏辨槸 <code>https://username.github.io/my-blog/</code>銆?/p>
+                <h2>核心步骤</h2>
+                <h3>1. 创建仓库</h3>
+                <p>首先在 GitHub 上创建一个<strong>公开</strong>仓库。仓库名称可以任意命名（如 <code>my-blog</code>），这样网站地址就是 <code>https://username.github.io/my-blog/</code>。</p>
 
-                <h3>2. 缂栧啓鍗氬鍐呭</h3>
-                <p>浣跨敤 HTML銆丮arkdown 鎴栭潤鎬佺綉绔欑敓鎴愬櫒锛堝 Hugo銆丣ekyll銆乂itePress 绛夛級缂栧啓鍗氬鏂囩珷銆傛湰椤圭洰浣跨敤浜嗙畝鍗曠殑 HTML 椤甸潰鏉ュ睍绀哄崥瀹㈠唴瀹广€?/p>
+                <h3>2. 编写博客内容</h3>
+                <p>使用 HTML、Markdown 或静态网站生成器（如 Hugo、Jekyll、VitePress 等）编写博客文章。本项目使用了简单的 HTML 页面来展示博客内容。</p>
 
-                <h3>3. 閰嶇疆 GitHub Actions</h3>
-                <p>鍦ㄤ粨搴撲腑鍒涘缓 <code>.github/workflows/deploy.yml</code> 鏂囦欢锛岄厤缃嚜鍔ㄩ儴缃插伐浣滄祦銆傛瘡褰撲唬鐮佹帹閫佸埌涓诲垎鏀椂锛孏itHub Actions 浼氳嚜鍔ㄨ繍琛岋紝灏嗛潤鎬佹枃浠堕儴缃插埌 GitHub Pages銆?/p>
-                <p>宸ヤ綔娴佷富瑕佸寘鍚互涓嬫楠わ細</p>
+                <h3>3. 配置 GitHub Actions</h3>
+                <p>在仓库中创建 <code>.github/workflows/deploy.yml</code> 文件，配置自动部署工作流。每当代码推送到主分支时，GitHub Actions 会自动运行，将静态文件部署到 GitHub Pages。</p>
+                <p>工作流主要包含以下步骤：</p>
                 <ul>
-                    <li>妫€鍑轰粨搴撲唬鐮侊紙actions/checkout锛?/li>
-                    <li>閰嶇疆 Pages锛坅ctions/configure-pages锛?/li>
-                    <li>涓婁紶闈欐€佹枃浠讹紙actions/upload-pages-artifact锛?/li>
-                    <li>閮ㄧ讲鍒?Pages锛坅ctions/deploy-pages锛?/li>
+                    <li>检出仓库代码（actions/checkout）</li>
+                    <li>配置 Pages（actions/configure-pages）</li>
+                    <li>上传静态文件（actions/upload-pages-artifact）</li>
+                    <li>部署到 Pages（actions/deploy-pages）</li>
                 </ul>
 
-                <h3>4. 鍚敤 GitHub Pages</h3>
-                <p>鍦ㄤ粨搴撶殑 Settings 鈫?Pages 涓紝灏?Source 璁剧疆涓?<strong>GitHub Actions</strong>銆傝繖鏍烽儴缃插伐浣滄祦瀹屾垚鍚庯紝缃戠珯浼氳嚜鍔ㄦ洿鏂般€?/p>
+                <h3>4. 启用 GitHub Pages</h3>
+                <p>在仓库的 Settings → Pages 中，将 Source 设置为 <strong>GitHub Actions</strong>。这样部署工作流完成后，网站会自动更新。</p>
 
-                <h2>鎶€鏈爤閫夋嫨</h2>
-                <p>瀵逛簬涓汉鍗氬锛屾湁澶氱浼樼鐨勫紑婧愬伐鍏峰彲浠ラ€夋嫨锛?/p>
+                <h2>技术栈选择</h2>
+                <p>对于个人博客，有多种优秀的开源工具可以选择：</p>
                 <ul>
-                    <li><strong>Hugo</strong>锛欸o 璇█缂栧啓锛屾瀯寤洪€熷害鏋佸揩</li>
-                    <li><strong>Jekyll</strong>锛欸itHub Pages 鍘熺敓鏀寔锛孯uby 缂栧啓</li>
-                    <li><strong>VitePress</strong>锛氬熀浜?Vue 鍜?Vite锛岄€傚悎鏂囨。鍜屽崥瀹?/li>
-                    <li><strong>MkDocs</strong>锛歅ython 缂栧啓锛岄€傚悎椤圭洰鏂囨。</li>
-                    <li><strong>Hexo</strong>锛歂ode.js 缂栧啓锛屼富棰樹赴瀵?/li>
+                    <li><strong>Hugo</strong>：Go 语言编写，构建速度极快</li>
+                    <li><strong>Jekyll</strong>：GitHub Pages 原生支持，Ruby 编写</li>
+                    <li><strong>VitePress</strong>：基于 Vue 和 Vite，适合文档和博客</li>
+                    <li><strong>MkDocs</strong>：Python 编写，适合项目文档</li>
+                    <li><strong>Hexo</strong>：Node.js 编写，主题丰富</li>
                 </ul>
-                <p>鏈崥瀹娇鐢ㄧ函闈欐€?HTML 鏂瑰紡鎼缓锛岄厤鍚?GitHub Actions 瀹炵幇鑷姩閮ㄧ讲锛岀畝鍗曢珮鏁堛€?/p>
+                <p>本博客使用纯静态 HTML 方式搭建，配合 GitHub Actions 实现自动部署，简单高效。</p>
 
-                <h2>鎬荤粨</h2>
-                <p>閫氳繃 GitHub Pages + GitHub Actions锛屾垜浠彲浠ラ浂鎴愭湰鎼缓涓€涓嚜鍔ㄩ儴缃茬殑涓汉鍗氬銆傛暣涓祦绋嬪埄鐢ㄤ簡寮€婧愬伐鍏峰拰鍏嶈垂鏈嶅姟锛屾棤闇€璐拱鏈嶅姟鍣紝涔熸棤闇€澶嶆潅鐨勮繍缁存搷浣溿€傚彧瑕佹帉鎻?Git 鍜?Markdown/HTML 鐨勫熀纭€鐭ヨ瘑锛屽氨鑳藉湪鐭椂闂村唴鎷ユ湁鑷繁鐨勬妧鏈崥瀹€?/p>
+                <h2>总结</h2>
+                <p>通过 GitHub Pages + GitHub Actions，我们可以零成本搭建一个自动部署的个人博客。整个流程利用了开源工具和免费服务，无需购买服务器，也无需复杂的运维操作。只要掌握 Git 和 Markdown/HTML 的基础知识，就能在短时间内拥有自己的技术博客。</p>
 
-                <p style="margin-top:30px;font-style:italic;color:#888;">鏈枃鏄€屽紑婧愯蒋浠跺紑鍙戞妧鏈€嶈绋嬪疄璺典綔涓氱殑涓€閮ㄥ垎銆?/p>
+                <p style="margin-top:30px;font-style:italic;color:#888;">本文是「开源软件开发技术」课程实践作业的一部分。</p>
             </div>
         </article>
         <div class="post-navigation">
-            <a href="../">鈫?杩斿洖棣栭〉</a>
+            <a href="../">← 返回首页</a>
         </div>
     </main>
     <footer class="site-footer">
         <div class="container">
-            <p>漏 2026 涓汉鍗氬 | Powered by <a href="https://pages.github.com">GitHub Pages</a></p>
+            <p>© 2026 个人博客 | Powered by <a href="https://pages.github.com">GitHub Pages</a></p>
         </div>
     </footer>
 </body>
